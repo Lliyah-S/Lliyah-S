@@ -1,4 +1,11 @@
 /*
+background
+*/
+body {
+    background-color: rgb(221, 246, 255);
+}
+
+/*
 heading
 */ 
 .heading {
@@ -13,8 +20,7 @@ normtext
 */ 
 .p1 {
     color: black;
-    font-family: "Courier New", courier, monospace;
-    margin-left: 200px;
+    font-family: "Lucida Console", "Courier New", monospace;
 }
 
 /*
@@ -28,6 +34,7 @@ firsttable
     margin-right: auto;
 
     height: 50px; 
+    background-color: rgb(255, 255, 255);
 }
 
 /*
@@ -41,6 +48,7 @@ secondtable
     margin-right: auto;
 
     height: 200px; 
+    background-color: rgb(255, 255, 255);
 }
 
 /*
