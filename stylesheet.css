@@ -1,18 +1,13 @@
-/* 
-tables in general
+/*
+firsttable
 */
-table, th, td, tr {
+.table {
     border: 1px solid black; 
     border-collapse: collapse; 
     width: 95%;
     margin-left: auto;
     margin-right: auto;
-}
 
-/*
-firsttable
-*/
-.table {
     height: 50px; 
 }
 
@@ -20,5 +15,11 @@ firsttable
 secondtable
 */
 .table1 {
+    border: 1px solid black; 
+    border-collapse: collapse; 
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    
     height: 100px; 
 }
