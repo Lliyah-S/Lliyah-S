@@ -11,8 +11,8 @@ heading
 .p1 {
     color: black;
     font-family: "Courier New", courier, monospace;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 300px;
+    margin-right: 300px;
     font-size: 20px;
 }
 
