@@ -13,13 +13,12 @@ table, th, td, tr {
 firsttable
 */
 .table {
-    height: 100px; 
-
+    height: 50px; 
 }
 
 /*
 secondtable
 */
 .table1 {
-    height: 500px; 
+    height: 100px; 
 }
