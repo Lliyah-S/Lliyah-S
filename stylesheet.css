@@ -8,7 +8,13 @@ heading
     font-size: 40px;
 }
 
-
+p {
+    color: black;
+    font-family: "Courier New", courier, monospace;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+}
 
 /*
 firsttable
