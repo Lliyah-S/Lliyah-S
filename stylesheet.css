@@ -2,7 +2,7 @@
 background
 */
 body {
-    background-color: rgb(232, 232, 232);
+    background-color: rgb(231, 245, 255);
 }
 
 /*
@@ -38,7 +38,7 @@ firsttable
 
     height: 50px; 
     background-color: rgb(255, 255, 255);
-    td:hover {background-color: rgb(145, 145, 145);} 
+    td:hover {background-color: rgb(204, 231, 255);} 
 }
 
 /*
@@ -71,3 +71,4 @@ centering stuff
 td, th {
     text-align: center;
 }
+
