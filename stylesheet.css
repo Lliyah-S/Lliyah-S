@@ -1,7 +1,25 @@
-
-table, th, td, tr {
+/* 
+tables in general
+*/
+table, th, td {
     border: 1px solid black; 
     border-collapse: collapse; 
+    width: 95%;
     margin-left: auto;
     margin-right: auto;
+}
+
+/*
+firsttable
+*/
+.table {
+    height: 100px; 
+
+}
+
+/*
+secondtable
+*/
+.table1 {
+    height: 500px; 
 }
