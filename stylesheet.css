@@ -25,6 +25,14 @@ normtext
 }
 
 /*
+images
+*/ 
+img {
+    width:200px;
+    height:180px;
+}
+
+/*
 firsttable
 */
 .table {
@@ -49,7 +57,7 @@ secondtable
     margin-left: auto;
     margin-right: auto;
 
-    height: 280px; 
+    height: 260px; 
     background-color: rgb(255, 255, 255);
 }
 
@@ -68,7 +76,7 @@ thirdtable
 /*
 centering stuff 
 */ 
-td, th {
+td, th, p {
     text-align: center;
 }
 
