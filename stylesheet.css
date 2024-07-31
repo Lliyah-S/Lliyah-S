@@ -20,7 +20,7 @@ normtext
 */ 
 .p1 {
     color: black;
-    font-family: "Lucida Console", "Courier New", monospace;
+    font-family: "Courier New", Courier, monospace;
     font-size: 20px;
 }
 
@@ -28,8 +28,8 @@ normtext
 images
 */ 
 img {
-    width:200px;
-    height:180px;
+    width:180px;
+    height:160px;
 }
 
 /*
@@ -42,11 +42,11 @@ firsttable
     
     border-spacing: 0;
     border-collapse: separate;
-    border-radius: 10px;
+    border-radius: 20px;
 
     height: 50px; 
     background-color: rgb(255, 255, 255);
-    td:hover {background-color: rgb(204, 231, 255);} 
+    td:hover {background-color: rgb(204, 231, 255); border-spacing: 0; border-collapse: separate; border-radius: 20px;} 
 }
 
 /*
@@ -57,7 +57,11 @@ secondtable
     margin-left: auto;
     margin-right: auto;
 
-    height: 260px; 
+    border-spacing: 0;
+    border-collapse: separate;
+    border-radius: 10px;
+
+    height: 250px; 
     background-color: rgb(255, 255, 255);
 }
 
@@ -68,6 +72,10 @@ thirdtable
     width: 95%;
     margin-left: auto;
     margin-right: auto;
+
+    border-spacing: 0;
+    border-collapse: separate;
+    border-radius: 10px;
 
     height: 200px; 
     background-color: rgb(255, 255, 255);
