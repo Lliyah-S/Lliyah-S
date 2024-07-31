@@ -28,8 +28,9 @@ normtext
 images
 */ 
 img {
-    width:180px;
-    height:160px;
+    width:auto;
+    height:170px;
+    vertical-align: bottom
 }
 
 /*
@@ -87,4 +88,3 @@ centering stuff
 td, th, p {
     text-align: center;
 }
-
