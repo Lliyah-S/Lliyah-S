@@ -14,7 +14,7 @@
 
         <audi controls>
             <source src="fjkdlfj" type="audio/fdj">
-            
+
         </audi>
 
         <p class="heading"> 
@@ -58,15 +58,20 @@
                     <p>
                         <form>
                             <p> what is the largest dolphin in the world? </p>
-                            <input class="option1" type="radio" id="orca" name="largest dolphin" value="orca">
+                            <input type="radio" id="orca" name="largest dolphin" value="orca">
                             <label for="orca">orca // killer whale</label><br>
-                            <input class="option1" type="radio" id="bottlenose" name="largest dolphin" value="bottle">
+                            <input type="radio" id="bottlenose" name="largest dolphin" value="bottle">
                             <label for="bottlenose">bottlenose dolphin</label><br>
-                            <input class="option1" type="radio" id="spinner" name="largest dolphin" value="spinner">
+                            <input type="radio" id="spinner" name="largest dolphin" value="spinner">
                             <label for="spinner">spinner dolphin</label>
                             <br>
                             <br>
-                            <button onclick=check()>Submit</button>
+                            <button id="button" type="submit">Submit</button>
+
+                            <div class="result-container"> 
+                                <p id="result"></p>
+                            </div>
+                        
                         </form>
                     </p>
                 </td>
@@ -75,7 +80,7 @@
         </table>
 
         <p style="font-size: 16px"> 
-            Photo Gallery
+            photo gallery!
         </p>
 
         <div class="photogallery">
@@ -94,12 +99,17 @@
 
         <script> 
 
-            function check() {
-                const correct = "orca";
-                const guess = document.querySelectorAll(".option1");
-                
+            document.addEventListener("DOMContentLoaded", () => {
 
-            }
+                const button = document.getElementById("button");
+                const correct = "orca";
+                const result = document.getElementById("result");
+                const userguess = document.getElementById("")
+
+                submit.addEventListener
+
+            });
+            
         </script>
 
    </body>
