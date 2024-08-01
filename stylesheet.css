@@ -33,12 +33,14 @@ img {
     vertical-align: bottom;
     border: 5px, white;
     border-radius: 5px;
+    margin-left: 5px;
+    margin-right: 5px; 
 }
 
 /*
 firsttable
 */
-.table {
+.navigationtab {
     width: 95%;
     margin-left: auto;
     margin-right: auto;
@@ -55,7 +57,7 @@ firsttable
 /*
 secondtable
 */
-.table1 {
+.quiz {
     width: 95%;
     margin-left: auto;
     margin-right: auto;
@@ -64,27 +66,14 @@ secondtable
     border-collapse: separate;
     border-radius: 10px;
 
-    height: 250px; 
+    height: 235px; 
     background-color: rgb(255, 255, 255);
 }
 
 /*
-thirdtable
+photo gallery
 */
-.table2 {
-    width: 95%;
-    margin-left: auto;
-    margin-right: auto;
-
-    border-spacing: 0;
-    border-collapse: separate;
-    border-radius: 10px;
-
-    height: 200px; 
-    background-color: rgb(255, 255, 255);
-}
-
-.photo_gallery {
+.photogallery {
     flex: 1;
     display: flex;
     flex-direction: row;
@@ -94,6 +83,16 @@ thirdtable
     
     overflow: auto;
     white-space: nowrap;
+
+    background-color: #ffffff;
+    padding: 20px;
+    width: 92.5%;
+    margin-left: auto;
+    margin-right: auto; 
+
+    border-spacing: 0;
+    border-collapse: separate;
+    border-radius: 10px;
 }
 
 /*  
@@ -104,8 +103,6 @@ td, th, p {
 }
 
 /*
--get paln for making quiz (check answer)
+-get plan for making quiz (check answer)
 -get photo gallery slideshow to line uup with other elements(white things) 
--get more dolphin photos
--make background for gallery thats white
 */
