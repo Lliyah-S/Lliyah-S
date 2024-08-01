@@ -18,7 +18,7 @@
         </audi>
 
         <p class="heading"> 
-            the Website of liyah 
+            liyah + dolphins = pretty website
         </p>
 
         <table class="navigationtab"> 
@@ -30,79 +30,83 @@
                     </p1>
                 </td>
                 <td style="width:16%"> 
-                    <p1>
+                    <a href="photos.html">
                         photos
-                    </p1>
+                    </a>
                 </td>
                 <td style="width:16%"> 
-                    <p1>
+                    <a href="randomfacts.html">
                         random facts
-                    </p1>
+                    </a>
                 </td>
                 <td style="width:16%"> 
-                    <p1>
-                        why: liyah > leon
-                    </p1>
+                    <a href="liyahleon.html">
+                        why liyah > leon 
+                    </a>
                 </td>
             </tr>   
 
         </table>
 
-        <br>
-        <br>
+        <p style="font-size: 16px"> 
+            quiz time!
+        </p>
 
         <table class="quiz"> 
             
             <tr>
-                <p> QUIZ time! </p>
-                <td style="width:55%"> 
-                    <p>
-                        <form id="question1">
-                            <p> what is the largest dolphin in the world? </p>
-                            <input type="radio" id="orca" name="largest dolphin" value="orca">
-                            <label for="orca">orca // killer whale</label><br>
-                            <input type="radio" id="bottlenose" name="largest dolphin" value="bottle">
-                            <label for="bottlenose">bottlenose dolphin</label><br>
-                            <input type="radio" id="spinner" name="largest dolphin" value="spinner">
-                            <label for="spinner">spinner dolphin</label>
-                            <br>
-                            <br>
-                            <button id="button" type="submit">Submit</button>
 
-                            <div class="result-container"> 
-                                <div id="answer1"></div>
-                            </div>
-                        
-                        </form>
+                <td style="width:33.333%"> 
+                    <p style="font-size: 15px">
+                        what is the largest dolphin in the world?<br><br>
+                        a. orca<br>
+                        b. spinner dolphin<br>
+                        c. bottlenose dolphin<br>
                     </p>
+                    <form id="question1">
+                        <label for="answer1">choose a, b, c: </label><br>
+                        <input type="text" id="input1" name="answer1"><br>
+                        <input type="submit">
+                    </form>
+                    <div id="answer1"></div> 
                 </td>
-                <td style="width:55%"> 
-                    <p>
-                        <form id="question2">
-                            <p> what do dolphins eat? </p>
-                            <input type="radio" id="orca" name="largest dolphin" value="orca">
-                            <label for="orca">orca // killer whale</label><br>
-                            <input type="radio" id="bottlenose" name="largest dolphin" value="bottle">
-                            <label for="bottlenose">bottlenose dolphin</label><br>
-                            <input type="radio" id="spinner" name="largest dolphin" value="spinner">
-                            <label for="spinner">spinner dolphin</label>
-                            <br>
-                            <br>
-                            <button id="button" type="submit">Submit</button>
 
-                            <div class="result-container"> 
-                                <div id="answer1"></div>
-                            </div>
-                        
-                        </form>
+                <td style="width:33.333%"> 
+                    <p style="font-size: 15px">
+                        what do dolphin's eat?<br><br>
+                        a. other dolphins, fish<br>
+                        b. squid, turtles, mackerel<br>
+                        c. fish, squid, octopuses<br>
                     </p>
+                    <form id="question2">
+                        <label for="answer2">choose a, b, c: </label><br>
+                        <input type="text" id="input2" name="answer2"><br>
+                        <input type="submit">
+                    </form>
+                    <div id="answer2"></div> 
                 </td>
+
+                <td style="width:33.333%"> 
+                    <p style="font-size: 15px">
+                        what is the most common dolphin species?<br><br>
+                        a. hectors dolphin<br>
+                        b. short-beaked common dolphins<br>
+                        c. indo-pacific humpbacked dolphin<br>
+                    </p>
+                    <form id="question3">
+                        <label for="answer3">choose a, b, c: </label><br>
+                        <input type="text" id="input3" name="answer3"><br>
+                        <input type="submit">
+                    </form>
+                    <div id="answer3"></div> 
+                </td>
+
             </tr>
 
         </table>
 
         <p style="font-size: 16px"> 
-            photo gallery!
+            fav photos gallery!
         </p>
 
         <div class="photogallery">
@@ -121,36 +125,57 @@
 
         <script> 
 
-            const form1 = document.getElementById("question1")
-                const question1 = new FormData(form1);
+            const form1 = document.getElementById("question1").addEventListener("submit", function(event) {
+                event.preventDefault();
 
-                const button = document.getElementById("button");
                 const result = document.getElementById("answer1");
-                const correct_option =  document.getElementById("orca");
-                // const correct = "orca";
+                const user_input = document.getElementById("input1");
 
-                console.log(correct_option, result, button);
+                console.log(user_input);
 
-                button.addEventListener("click", () => {
-                    const correct = "orca";
+                if (user_input.value === "a") {
+                    result.textContent = "yay, you got it!";
+                } else {
+                    result.textContent = "incorrect- the right answer is a- orca!";
+                }
 
-                    const submissions = Object.fromEntries(question1);
-                    console.log(submissions);
+            });
 
-                    for (const [key, value] of submissions) {
-                        if (value === correct) {
-                            result.textContent = "You got it!";
-                            correct_option.style.backgroundColor = "green";
-                        } else {
-                            result.textContent = "Incorrect- The right answer is Orca!";
-                        }
-                    }
+            const form2 = document.getElementById("question2").addEventListener("submit", function(event) {
+                event.preventDefault();
 
-                });
-            
+                const result2 = document.getElementById("answer2");
+                const user_input2 = document.getElementById("input2");
+
+                console.log(user_input2);
+
+                if (user_input2.value === "c") {
+                    result2.textContent = "yay, you got it!";
+                } else {
+                    result2.textContent = "incorrect- the right answer is c- fish, squid & octopuses!";
+                }
+
+            });
+
+            const form3 = document.getElementById("question3").addEventListener("submit", function(event) {
+                event.preventDefault();
+
+                const result3 = document.getElementById("answer3");
+                const user_input3 = document.getElementById("input3");
+
+                console.log(user_input3);
+
+                if (user_input3.value === "b") {
+                    result3.textContent = "yay, you got it!";
+                } else {
+                    result3.textContent = "incorrect- the right answer is b- shortbeaked common dolphin!";
+                }
+
+            });
+
+
         </script>
 
    </body>
 
 </html>
-

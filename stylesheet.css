@@ -12,7 +12,7 @@ heading
     color:black;
     font-family: "Courier New", Courier, monospace;
     text-align: center; 
-    font-size: 32.5px;
+    font-size: 31.5px;
 }
 
 /*
@@ -60,7 +60,7 @@ navigation tab
 quiz
 */
 .quiz {
-    width: 95%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
 
@@ -70,6 +70,8 @@ quiz
 
     height: 220px; 
     background-color: rgb(255, 255, 255);
+    padding-top: 0px;
+    padding-bottom: 10px;
 }
 
 /*
@@ -88,7 +90,7 @@ photo gallery
 
     background-color: #ffffff;
     padding: 20px;
-    width: 92.5%;
+    width: 87.5%;
     margin-left: auto;
     margin-right: auto; 
 
