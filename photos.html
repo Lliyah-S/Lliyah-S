@@ -24,7 +24,7 @@
                         home
                     </a>
                 </td>
-                <td style="width:16%">  
+                <td style="width:16%" id="current">  
                     <p1>
                         photos
                     </p1>
@@ -52,12 +52,32 @@
             <tr>
 
                 <td> 
-                    
+                    <img src="assets/Picture.jpg" class="photos">
+                    <img src="assets/Picture1.jpg" class="photos">
+                    <img src="assets/Picture3.jpg" class="photos">
+                    <img src="assets/Picture4.jpg" class="photos">
+                    <img src="assets/Picture5.jpg" class="photos">
                 </td>
 
             </tr>
 
         </table>
+
+        <script>
+
+            const current_page = document.getElementById("current");
+
+            const current_url = window.location.href;
+            const current_url_arr = current_url.split('/');
+            const keyword = current_url_arr[current_url_arr.length - 1];
+
+            console.log(keyword);
+            if (keyword === "photos.html") {
+                current_page.style.backgroundColor = "rgb(204, 231, 255)";
+                current_page.style.borderRadius = "20px";
+            };
+
+        </script>
 
    </body>
 

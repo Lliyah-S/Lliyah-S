@@ -25,16 +25,19 @@ normtext
 }
 
 /*
-images
+images on index tab
 */ 
 img {
     width:auto;
     height:170px;
     vertical-align: bottom;
-    border: 5px, white;
-    border-radius: 5px;
-    margin-left: 10px;
-    margin-right: 10px; 
+
+    border-spacing: 0;
+    border-collapse: separate;
+    border-radius: 20px;
+
+    margin-left: 5px;
+    margin-right: 11px; 
     padding-top: 5px;
     padding-bottom: 5px;
 }
@@ -81,7 +84,7 @@ photo gallery
     flex: 1;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     height: 100%;
     
@@ -89,7 +92,7 @@ photo gallery
     white-space: nowrap;
 
     background-color: #ffffff;
-    padding: 20px;
+    padding: 15px;
     width: 87.5%;
     margin-left: auto;
     margin-right: auto; 
@@ -99,15 +102,35 @@ photo gallery
     border-radius: 10px;
 }
 
+/*
+images on photo tab
+*/
+.photos {
+    width:auto;
+    height:150px;
+    vertical-align: bottom;
+
+    border-spacing: 0;
+    border-collapse: separate;
+    border-radius: 20px;
+
+    margin-left: auto;
+    margin-right: auto; 
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+
+
+
+
+
+
+
 /*  
 centering stuff 
 */ 
 td, th, p {
     text-align: center;
 }
-
-/*
--get plan for making quiz (check answer)
--get photo gallery slideshow to line uup with other elements(white things) 
-*/
-

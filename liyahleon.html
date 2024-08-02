@@ -34,7 +34,7 @@
                         random facts
                     </a>
                 </td>
-                <td style="width:16%"> 
+                <td style="width:16%" id="current"> 
                     <p1>
                         why liyah > leon
                     </p1>
@@ -58,6 +58,22 @@
             </tr>
 
         </table>
+
+        <script>
+
+            const current_page = document.getElementById("current");
+
+            const current_url = window.location.href;
+            const current_url_arr = current_url.split('/');
+            const keyword = current_url_arr[current_url_arr.length - 1];
+
+            console.log(keyword);
+            if (keyword === "liyahleon.html") {
+                current_page.style.backgroundColor = "rgb(204, 231, 255)";
+                current_page.style.borderRadius = "20px";
+            };
+
+        </script>
 
    </body>
 
